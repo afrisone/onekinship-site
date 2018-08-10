@@ -1,0 +1,29 @@
+a:visited, a {
+    color: black;
+}
+
+.nav, .header {
+    display: flex;
+    justify-content: center;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: lightgrey;
+    display:inline-block;
+}
+
+.nav li {
+    display: inline-block;
+    padding: 8px;
+    margin: 0;
+}
+
+.nav .active {
+    background-color: darkslateblue;
+}
+.nav .active a {
+    color: white;
+}
