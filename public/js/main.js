@@ -496,73 +496,73 @@ Contact Form activation code
 
 -------------------------------------*/
 
-if($('#contact-form').length){
+// if($('#contact-form').length){
 
-    $('#contact-form').validator().on('submit', function (e) {
+//     $('#contact-form').validator().on('submit', function (e) {
 
-         var $this = $(this),
+//          var $this = $(this),
 
-            $target = $(".form-response");
+//             $target = $(".form-response");
 
-       if (e.isDefaultPrevented()) {
+//        if (e.isDefaultPrevented()) {
 
-          $target.html("<div class='alert alert-danger'><p>Please select all required field.</p></div>");
+//           $target.html("<div class='alert alert-danger'><p>Please select all required field.</p></div>");
 
-       } else {
+//        } else {
 
-        var name = $("#form-name").val();
+//         var name = $("#form-name").val();
 
-        var email = $("#form-email").val();
+//         var email = $("#form-email").val();
 
-        var phone = $("#form-phone").val();
+//         var phone = $("#form-phone").val();
 
-        var message = $("#form-message").val();
+//         var message = $("#form-message").val();
 
-        // ajax call
+//         // ajax call
 
-         $.ajax({
+//          $.ajax({
 
-           url: 'php/form-process.php',
+//            url: 'php/form-process.php',
 
-           type: 'POST',
+//            type: 'POST',
 
-           data: "name=" + name + "&email=" + email + "&phone=" + phone + "&message=" + message,
+//            data: "name=" + name + "&email=" + email + "&phone=" + phone + "&message=" + message,
 
-           beforeSend: function() {
+//            beforeSend: function() {
 
-              $target.html("<div class='alert alert-info'><p>Loading ...</p></div>");
+//               $target.html("<div class='alert alert-info'><p>Loading ...</p></div>");
 
-          },
+//           },
 
-           success: function( text ){
+//            success: function( text ){
 
-                  if(text == "success"){
+//                   if(text == "success"){
 
-                      $this[0].reset();
+//                       $this[0].reset();
 
-                      $target.html("<div class='alert alert-success'><p>Message Has Been Sent.</p></div>");
+//                       $target.html("<div class='alert alert-success'><p>Message Has Been Sent.</p></div>");
 
-                  } else {
+//                   } else {
 
-                      $target.html("<div class='alert alert-danger'><p>"+text+"</p></div>");
+//                       $target.html("<div class='alert alert-danger'><p>"+text+"</p></div>");
 
-                  }
+//                   }
 
-               }
+//                }
 
-         });
+//          });
 
 
 
-         return false;
+//          return false;
 
-       }
+//        }
 
-        return false;
+//         return false;
 
-    });
+//     });
 
-  }
+//   }
 
    
 
