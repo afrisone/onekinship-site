@@ -2,6 +2,30 @@ const express = require('express')
 const app = express()
 const path = require('path')
 const port = 3000
+const nodemailer = require('nodemailer')
+const config = require('./config')
+
+function sendEmail(email, message) {
+    const transporter = nodemailer.createTransport({
+        host : "smtp.gmail.com",
+        auth: {
+            user: config.email,
+            pass: config.password
+        }
+    })
+
+    transporter.sendMail({
+        host : "smtp.gmail.com",
+        port : "465",
+        ssl: true,
+        domain : "localhost",
+        to : "donald.frisone@gmail.com",
+        from : config.email,
+        subject : 'Hi babe!!',
+        text: 'Love you!',
+        authentication : "login"
+    }
+}
 
 const routerOptions = {
     root: path.join(__dirname, 'public')
