@@ -7673,3 +7673,22 @@ ul.counter-list li:last-child {
 .table-responsive::-webkit-scrollbar-thumb {
   border-color: #fb5b21;
 }
+
+.contact-success, .contact-failed {
+  display: none;
+  margin-bottom: 12px;
+  padding: 8px;
+}
+
+.contact-failed {
+  background: lightcoral;
+  color: white;
+}
+
+.contact-success {
+  background: lightgreen;
+}
+
+.contact-success.show, .contact-failed.show {
+  display: block;
+}

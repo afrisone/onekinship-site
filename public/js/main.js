@@ -495,6 +495,16 @@ accordion
 Contact Form activation code
 
 -------------------------------------*/
+if (window.location.href.includes('contact?success')) {
+    $('.contact-success').addClass('show')
+}
+else if (window.location.href.includes('contact?failed')) {
+    $('.contact-failed').addClass('show')
+}
+else {
+    $('.contact-success').removeClass('show')
+    $('.contact-failed').removeClass('show')
+}
 
 // if($('#contact-form').length){
 
