@@ -192,10 +192,9 @@
     .error-page .error-content p { font-size: 24px; line-height: 30px;}
     .error-page .error-content { padding-bottom: 50px;}
     .error-page .error-info p { margin-top: 30px; font-size: 16px;}
-    .contact-us-area { padding-top: 60px;}
     .contact-form .send-button { margin-bottom: 40px;}
     .contact-form legend { font-size: 24px; margin-bottom: 30px;}
-    .contact-us-area { padding-top: 60px;}
+    .contact-us-area { padding-top: 60px; padding-bottom: 60px; }
     .category-product-grid .item { padding-right: 0; width: 50%; float: left;}
     .single-trainer-item .trainer-overly { width: 180px; padding: 10px 0;}
     .about-single-service .service-item .service-image span {
@@ -290,10 +289,9 @@
     .error-page .error-content p { font-size: 20px; line-height: 24px;}
     .error-page .error-content { padding-bottom: 50px;}
     .error-page .error-info p { margin-top: 30px;}
-    .contact-us-area { padding-top: 60px;}
     .contact-form .send-button { margin-bottom: 40px;}
     .contact-form legend { font-size: 24px; margin-bottom: 30px;}
-    .contact-us-area { padding-top: 60px;}
+    .contact-us-area { padding-top: 60px; padding-bottom: 60px;}
     .footer-area h3 { margin-bottom: 15px;}
     .copy-right-area .copy-right,
     .visa-card ul { text-align: center; margin-bottom: 8px; font-size: 14px;} 
@@ -453,7 +451,7 @@
     .stick .logo-area { padding-top: 10px;}
     .stick .logo-area img { width: 120px;}
     .stick .main-menu ul li a { padding: 12px;}
-    .classes-detail-area, .contact-us-area { padding-top: 70px;}
+    .classes-detail-area, .contact-us-area { padding-top: 70px; padding-bottom: 70px;}
     .our-trainer-item .trainer-image .social-overly { top: 42%;}
     .single-product-tab ul li { min-height: 80px;}
     .contact-form legend { font-size: 30px; margin-bottom: 35px;}

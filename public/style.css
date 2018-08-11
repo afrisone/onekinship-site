@@ -7692,3 +7692,7 @@ ul.counter-list li:last-child {
 .contact-success.show, .contact-failed.show {
   display: block;
 }
+
+.contact-us-area {
+  padding-bottom: 60px;
+}
