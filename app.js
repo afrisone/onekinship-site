@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const path = require('path')
-const email = require('./server/email')
+// const email = require('./server/email')
 
 const routerOptions = {
     root: path.join(__dirname, 'public')
