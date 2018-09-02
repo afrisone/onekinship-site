@@ -34,7 +34,7 @@ app.get('/email', function(req, res) {
     }
 
     try {
-        email(emailParams)
+        // email(emailParams)
         res.redirect('/contact?success')
     }
     catch(err) {
