@@ -1,7 +1,6 @@
 const express = require('express')
 const app = express()
 const path = require('path')
-const port = 3000
 const email = require('./server/email')
 
 const routerOptions = {
@@ -46,6 +45,8 @@ app.get('/email', function(req, res) {
 app.get('*', function(req, res){
     res.sendFile('404.html', routerOptions);
   });
+
+const port = process.env.PORT || 3000
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}/`)
