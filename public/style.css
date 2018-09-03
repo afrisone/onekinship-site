@@ -3166,7 +3166,7 @@ a.sign-button:hover {
 =                  08. What clients say style              =
 ===========================================================*/
 .landing-bg {
-  background: #000000 url(img/class-schedule.png) 0 0 no-repeat;
+  background: #000000 url(img/running.jpeg) 0 0 no-repeat;
   background-size: cover;
   background-attachment: fixed;
   padding: 100px 0 0;
@@ -4433,7 +4433,7 @@ a.sign-button:hover {
 ===========================================================*/
 .inner-banner-area {
   margin-top: 84px;
-  background: url(img/banner/about-banner.jpg);
+  background: url(img/banner/running-banner.jpeg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -6539,6 +6539,9 @@ ul.counter-list li:last-child {
   text-transform: uppercase;
   margin-bottom: 50px;
 }
+.why-choose-content p {
+  color: white;
+}
 .why-choose-content h2:before {
   background: #fb5b21;
   bottom: -24px;
@@ -7584,7 +7587,7 @@ ul.counter-list li:last-child {
   color: #212121;
 }
 .class-schedule2 {
-  background: #000000 url(img/class-schedule.png) 0 0 no-repeat;
+  background: #000000 url(img/running.jpeg) 0 0 no-repeat;
   background-size: cover;
   background-attachment: fixed;
   padding: 95px 0 100px;
@@ -7695,4 +7698,10 @@ ul.counter-list li:last-child {
 
 .contact-us-area {
   padding-bottom: 60px;
+}
+
+.package1 {
+  display: inline-block;
+  background: pink;
+  padding: 25px;
 }
