@@ -7,6 +7,23 @@
     );
   });
 
+  $(".contact-form").submit(function() {
+    $(".send-button").html(
+      `<div class="spinner-container">
+        <div class="lds-roller">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>`
+    );
+  });
+
   /*-------------------------------------
 
   jquery Nav Scroll activation code

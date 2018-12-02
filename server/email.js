@@ -23,7 +23,7 @@ function sendEmail(emailParams) {
     port: "465",
     ssl: true,
     domain: "localhost",
-    to: config.e,
+    to: config.es,
     from: config.e,
     subject: "OneKinship Contact Request",
     html: `
