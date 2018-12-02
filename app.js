@@ -2,7 +2,13 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const request = require("request");
-const config = require("./config");
+// const config = require("./config");
+let INSTAGRAM_ACCESS_TOKEN = process.env.INSTAGRAM_ACCESS_TOKEN;
+
+if (!INSTAGRAM_ACCESS_TOKEN) {
+  INSTAGRAM_ACCESS_TOKEN = require("./config").INSTAGRAM_ACCESS_TOKEN;
+}
+
 // const email = require('./server/email')
 
 const routerOptions = {
