@@ -1,11 +1,11 @@
 (function($) {
   "use strict";
 
-  // $.get("/getInstagramImage", function(data) {
-  //   $(".instagram-area").append(
-  //     `<a href="${data.link}"><img src='${data.imageUrl}' /></a>`
-  //   );
-  // });
+  $.get("/getInstagramImage", function(data) {
+    $(".instagram-area").append(
+      `<a href="${data.link}"><img src='${data.imageUrl}' /></a>`
+    );
+  });
 
   /*-------------------------------------
 
