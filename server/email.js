@@ -1,11 +1,14 @@
 const nodemailer = require("nodemailer");
-const config = require("../config");
 
-if (!config) {
+let config;
+if (process.env.e) {
   config = {
     e: process.env.e,
-    ep: process.env.ep
+    ep: process.env.ep,
+    es: process.env.es
   };
+} else {
+  config = require("../config");
 }
 
 function sendEmail(emailParams) {
