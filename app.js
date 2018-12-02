@@ -51,9 +51,7 @@ app.get("/email", function(req, res) {
 
 app.get("/getInstagramImage", function(req, res) {
   request(
-    `https://api.instagram.com/v1/users/self/media/recent/?access_token=${
-      config.access_token
-    }`,
+    `https://api.instagram.com/v1/users/self/media/recent/?access_token=${INSTAGRAM_ACCESS_TOKEN}`,
     (error, response, bodyStr) => {
       const body = JSON.parse(bodyStr);
       const data = {
