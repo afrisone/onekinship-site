@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const request = require("request");
-// const config = require("./config");
+const email = require("./server/email");
 let INSTAGRAM_ACCESS_TOKEN = process.env.INSTAGRAM_ACCESS_TOKEN;
 
 if (!INSTAGRAM_ACCESS_TOKEN) {
@@ -40,13 +40,15 @@ app.get("/email", function(req, res) {
     number: req.query.textinput[2],
     message: req.query.textarea
   };
-
-  try {
-    // email(emailParams)
-    res.redirect("/contact?success");
-  } catch (err) {
-    res.redirect("/contact?failed");
-  }
+  email(emailParams)
+    .then(() => {
+      console.log("success!");
+      res.redirect("/contact?success");
+    })
+    .catch(err => {
+      console.log("failed..", err);
+      res.redirect("/contact?failed");
+    });
 });
 
 app.get("/getInstagramImage", function(req, res) {
